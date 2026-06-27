@@ -1,40 +1,58 @@
 # Deloitte Australia – Data Analytics Job Simulation (Forage)
 
-📌 Project Overview
+> A hands-on data analytics project completed through the Deloitte Australia Data Analytics Virtual Experience Program on Forage.
 
-This project was completed as part of the **Deloitte Australia Data Analytics Virtual Experience Program** on Forage.
+---
 
-The simulation focused on solving two business problems using **Tableau** and **Microsoft Excel**. The objective was to analyze operational data, create interactive dashboards, and apply logical business rules to support data-driven decision-making.
+# Project Overview
 
+This project demonstrates practical data analytics skills by solving two business problems using **Tableau** and **Microsoft Excel**.
 
-🛠️ Tools & Technologies
+The simulation involved:
 
-* Tableau Public
-* Microsoft Excel
-* JSON
-* Data Visualization
-* Business Intelligence
+- Analyzing industrial telemetry data to identify machine downtime.
+- Building an interactive Tableau dashboard for operational insights.
+- Applying Excel business logic to classify gender pay equality scores.
+- Presenting actionable insights to support business decision-making.
 
+---
 
-📊 Task 1 – Machine Downtime Analysis
+# Tools & Technologies
 
-## Business Problem
+- Tableau Public
+- Microsoft Excel
+- JSON
+- Data Visualization
+- Business Intelligence
+- Dashboard Design
 
-Daikibo Industrials wanted to identify which manufacturing factory experienced the highest machine downtime and determine which machine type contributed most to the downtime.
+---
 
-## Dataset
+# Project Tasks
 
-* Industrial telemetry dataset (JSON)
-* Machine status records collected from multiple factories
+## Task 1 – Machine Downtime Analysis
 
-## Approach
+### Business Objective
 
-* Imported JSON data into Tableau.
-* Created a calculated field to measure downtime.
-* Built an interactive dashboard showing downtime by factory and device type.
-* Added dashboard filtering to allow drill-down analysis.
+Analyze telemetry data from Daikibo Industrials to determine:
 
-### Calculated Field
+- Which factory experienced the highest machine downtime.
+- Which machine type contributed the most to downtime.
+
+### Dataset
+
+- Industrial Telemetry Data (JSON)
+- Machine Status Records
+
+### Methodology
+
+- Imported JSON data into Tableau.
+- Created a calculated field to identify unhealthy machine records.
+- Developed an interactive dashboard.
+- Compared downtime across factories and device types.
+- Enabled interactive dashboard filtering for detailed analysis.
+
+### Tableau Calculated Field
 
 ```text
 IF [Status] = "unhealthy" THEN 10
@@ -42,82 +60,118 @@ ELSE 0
 END
 ```
 
-Each unhealthy machine record represents **10 minutes** of downtime.
+Each unhealthy machine status represents **10 minutes of downtime**.
 
-## Dashboard Features
+### Dashboard Features
 
-* Downtime by Factory
-* Downtime by Device Type
-* Interactive dashboard filtering
-* Comparative bar charts
+- Downtime by Factory
+- Downtime by Device Type
+- Interactive Dashboard Filters
+- Comparative Bar Charts
 
-## Key Findings
+### Key Findings
 
-* Factory with the highest downtime:
-
-  * ** Daikibo Factory Seiko **
-
-* Device type with the highest downtime:
-
-  * ** LaserWelder  **
+| Analysis | Result |
+|----------|--------|
+| Factory with Highest Downtime | **Daikibo Factory Seiko** |
+| Device with Highest Downtime | **Laser Welder** |
 
 ---
 
- 📈 Task 2 – Gender Pay Equality Analysis
+## Task 2 – Gender Pay Equality Analysis
 
-## Business Problem
+### Business Objective
 
-Deloitte's Forensic Technology team investigated gender pay equality across different job roles. The objective was to classify equality scores based on predefined business rules.
+Classify employee equality scores according to Deloitte's business rules to identify potential pay inequality.
 
-## Tool Used
+### Tool Used
 
-* Microsoft Excel
+- Microsoft Excel
 
-## Business Rules
+### Classification Rules
 
-| Equality Score                   | Classification        |
-| -------------------------------- | --------------------- |
-| -10 to 10                        | Fair                  |
-| -20 to -11 or 11 to 20           | Unfair                |
+| Equality Score | Classification |
+|----------------|----------------|
+| -10 to 10 | Fair |
+| -20 to -11 or 11 to 20 | Unfair |
 | Less than -20 or Greater than 20 | Highly Discriminative |
 
-## Excel Formula
+### Excel Functions Used
 
-Used nested logical functions including:
+- IF()
+- OR()
+- AND()
 
-* IF()
-* AND()
-* OR()
+### Outcome
 
-to automatically classify every employee record.
+Created an automated classification system that assigns an Equality Class to each employee record based on predefined business rules.
 
 ---
 
-📂 Repository Structure
+# Dashboard Preview
+
+## Machine Downtime Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## Interactive Dashboard
+
+![Dashboard Selected](screenshots/dashboard_selected.png)
+
+---
+
+## Equality Classification
+
+![Equality Table](screenshots/equality_table.png)
+
+---
+
+# Skills Demonstrated
+
+- Data Cleaning
+- Data Analysis
+- Tableau Dashboard Development
+- Dashboard Filtering
+- Data Visualization
+- Business Intelligence
+- Microsoft Excel
+- Logical Functions (IF, AND, OR)
+- Business Problem Solving
+- Data Interpretation
+
+---
+
+# Repository Structure
 
 ```text
-deloitte-data-analytics-job-simulation/
+deloitte_data_analytics_job_simulation/
+│
+├── README.md
+├── screenshots/
+│   ├── dashboard.png
+│   ├── dashboard_selected.png
+│   └── equality_table.png
 │
 ├── data/
 ├── tableau/
-├── screenshots/
-├── certificate/
-└── README.md
+└── certificate/
 ```
 
 ---
 
-💡 Skills Demonstrated
+# About This Project
 
-* Data Analysis
-* Tableau Dashboard Development
-* Data Visualization
-* Business Intelligence
-* Dashboard Filtering
-* Excel Logical Functions
-* Business Problem Solving
-* Data Interpretation
+This repository showcases work completed as part of the **Deloitte Australia Data Analytics Virtual Experience Program (Forage)**. The project demonstrates practical skills in data visualization, dashboard development, Excel-based business logic, and data-driven decision-making.
 
 ---
+
+## Author
+
+**Julie Thuruthiyil Alex**
+
+Master of Information Technology (Data Analytics)  
+Griffith University
 
 
