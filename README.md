@@ -160,7 +160,12 @@ deloitte_data_analytics_job_simulation/
 ```
 
 ---
+## Certificate
 
+The project was completed as part of the Deloitte Australia Data Analytics Virtual Experience Program on Forage.
+
+📄 **Certificate:** [View Certificate](certificate/Deloitte_Australia_Data_Analytics_Forage_Certificate.pdf)
+---
 # About This Project
 
 This repository showcases work completed as part of the **Deloitte Australia Data Analytics Virtual Experience Program (Forage)**. The project demonstrates practical skills in data visualization, dashboard development, Excel-based business logic, and data-driven decision-making.
