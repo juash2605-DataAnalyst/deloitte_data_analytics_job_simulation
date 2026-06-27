@@ -164,7 +164,7 @@ deloitte_data_analytics_job_simulation/
 
 The project was completed as part of the Deloitte Australia Data Analytics Virtual Experience Program on Forage.
 
-📄 **Certificate:** [View Certificate](certificate/Deloitte_Australia_Data_Analytics_Forage_Certificate.pdf)
+📄 **Certificate:** [certificate/Deloitte certificate.pdf)
 ---
 # About This Project
 
